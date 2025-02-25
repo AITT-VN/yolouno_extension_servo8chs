@@ -1,0 +1,16 @@
+{
+    "name": "SERVO 8CHS",
+    "description": "Mục mở rộng dành cho bộ Servo 8 kênh",
+    "libs": [
+        "servo8chs.py"
+    ],
+    "blocks": [
+        "definition.js"
+    ],
+    "toolbox": "toolbox.xml",
+    "languages": {
+        "en": "languages/en.js",
+        "vi": "languages/vi.js"
+    },
+    "poster": "poster.png"
+}
