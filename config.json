@@ -1,5 +1,5 @@
 {
-    "name": "SERVO 8CHS",
+    "name": "SERVO8CHS KIT",
     "description": "Mục mở rộng dành cho bộ Servo 8 kênh",
     "libs": [
         "servo8chs.py"
