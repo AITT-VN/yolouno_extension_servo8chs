@@ -1,5 +1,5 @@
 const Servo8chsBlock = '#ff960d';
-const ImgUrl = 'https://ohstem-public.s3.ap-southeast-1.amazonaws.com/extensions/AITT-VN/yolobit_extension_motion_kit/images/';
+const ImgUrl = 'https://ohstem-public.s3.ap-southeast-1.amazonaws.com/extensions/AITT-VN/yolobit_extension_servo8chs/images/';
 
 Blockly.Blocks["servo_write_angle"] = {
   init: function () {
