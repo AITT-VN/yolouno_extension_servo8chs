@@ -1,7 +1,7 @@
 const Servo8chsBlock = '#ff960d';
-const ImgUrl = 'https://ohstem-public.s3.ap-southeast-1.amazonaws.com/extensions/AITT-VN/yolobit_extension_servo8chs/images/';
+const ImgUrl = 'https://ohstem-public.s3.ap-southeast-1.amazonaws.com/extensions/AITT-VN/yolobit_extension_motion_kit/images/';
 
-Blockly.Blocks["servo_write_angle"] = {
+Blockly.Blocks["servo8chs_write_angle"] = {
   init: function () {
     this.jsonInit({
       colour: Servo8chsBlock,
@@ -42,7 +42,7 @@ Blockly.Blocks["servo_write_angle"] = {
   },
 };
 
-Blockly.Python['servo_write_angle'] = function (block) {
+Blockly.Python['servo8chs_write_angle'] = function (block) {
   Blockly.Python.definitions_['import_yolo'] = 'from yolo_uno import *';
   Blockly.Python.definitions_['import_servo8chs'] = 'from servo8chs import *';
   var value_output = Blockly.Python.valueToCode(block, 'angle', Blockly.Python.ORDER_ATOMIC);
@@ -54,7 +54,7 @@ Blockly.Python['servo_write_angle'] = function (block) {
 };
 
 
-Blockly.Blocks["servo_micro_angle"] = {
+Blockly.Blocks["servo8chs_micro_angle"] = {
   init: function () {
     this.jsonInit({
       colour: Servo8chsBlock,
@@ -97,7 +97,7 @@ Blockly.Blocks["servo_micro_angle"] = {
   },
 };
 
-Blockly.Python['servo_micro_angle'] = function (block) {
+Blockly.Python['servo8chs_micro_angle'] = function (block) {
   Blockly.Python.definitions_['import_yolo'] = 'from yolo_uno import *';
   Blockly.Python.definitions_['import_servo8chs'] = 'from servo8chs import *';
   var value_output = Blockly.Python.valueToCode(block, 'angle', Blockly.Python.ORDER_ATOMIC);
@@ -107,11 +107,11 @@ Blockly.Python['servo_micro_angle'] = function (block) {
   
 };
 
-Blockly.Blocks['servo360_write'] = {
+Blockly.Blocks['servo8chs360_write'] = {
   init: function () {
     this.jsonInit(
       {
-        "type": "servo360_write",
+        "type": "servo8chs360_write",
         message0: Blockly.Msg.BLOCK_SERVO8CHS360_WRITE_MESSAGE0,
         "tooltip": Blockly.Msg.BLOCK_SERVO8CHS360_WRITE_TOOLTIP,
         "args0": [
@@ -152,7 +152,7 @@ Blockly.Blocks['servo360_write'] = {
   }
 };
 
-Blockly.Python['servo360_write'] = function (block) {
+Blockly.Python['servo8chs360_write'] = function (block) {
   Blockly.Python.definitions_['import_yolo'] = 'from yolo_uno import *';
   Blockly.Python.definitions_['import_servo8chs'] = 'from servo8chs import *';
   var value_output = Blockly.Python.valueToCode(block, 'speed', Blockly.Python.ORDER_ATOMIC);
